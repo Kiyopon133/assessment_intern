@@ -1,0 +1,80 @@
+.main .hero {
+  display: grid;
+  grid-template-columns: 1fr 562px;
+  font-family: "Poppins", sans-serif;
+  gap: 10px;
+  padding: 64.5px 60px;
+  cursor: grab;
+}
+
+.main .hero .left-column .left-column-text {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  padding-top: 50px;
+  gap: 30px;
+}
+
+.main .hero .left-column .left-column-text h2 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.main .hero .left-column .left-column-text h1 {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 75px;
+  color: rgba(92, 96, 97, 1);
+}
+
+.main .hero .left-column .left-column-text h1 span {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 75px;
+  color: rgba(0, 44, 89, 1);
+}
+
+.main .hero .left-column .left-column-text p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 1);
+  padding-bottom: 10px;
+}
+
+.main .hero .left-column .left-column-button {
+  width: 95%;
+  padding: 30px 0px;
+}
+
+.main .hero .left-column .left-column-button button {
+  width: 160px;
+  height: 52px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.main .hero .left-column .left-column-button button:hover {
+  background-color: #c8d9fb;
+  border: 1px solid #c8d9fb;
+}
+
+.main .hero .left-column .left-column-button .blue-button {
+  background-color: rgba(0, 44, 89, 1);
+  color: #fff;
+}
+
+.main .hero .left-column .left-column-button .white-button {
+  background-color: #fff;
+  color: rgba(0, 44, 89, 1);
+  border: 1px solid rgba(0, 44, 89, 1);
+}
+
+.main .hero .right-column img {
+  width: 500px;
+  height: 400px;
+}

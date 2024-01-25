@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500&family=Poppins:wght@400;500;700&display=swap");
+@import url(/style/navbar.css);
+@import url(/style/hero.css);
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  padding: 0;
+}
+
+.main {
+  height: 100%;
+}
+
+.burger-menu,
+.burger-menu-btn {
+  display: none;
+}
+/* For Mobile Device */
+@media only screen and (min-width: 0px) and (max-width: 600px) {
+  * {
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .main .navbar .burger-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .main .navbar .burger-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  .nav-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav-menu ul li a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .nav-menu ul li {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+  }
+  .nav-menu .login {
+    padding: 0px 100px 0px 100px;
+  }
+  .nav-menu .login button {
+    width: 100%;
+    height: 40px;
+    border-radius: 6px;
+    background-color: #002c59;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18.29px;
+  }
+
+  .nav-menu ul li:hover {
+    background-color: #c8d9fb;
+    border: 1px solid #c8d9fb;
+  }
+
+  .main {
+    width: 100%;
+  }
+
+  .main .navbar {
+    padding: 20px;
+    column-gap: 33%;
+  }
+
+  .main .navbar .logo img {
+    width: 100px;
+  }
+
+  .main .navbar .nav-list ul {
+    display: none;
+  }
+
+  .main .navbar .login {
+    display: none;
+  }
+
+  .main .hero {
+    display: inline-block;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .main .hero .left-column .left-column-text {
+    padding-top: 10px;
+    gap: 0px;
+  }
+
+  .main .hero .left-column .left-column-text h2 {
+    font-size: 17px;
+    line-height: 25px;
+    padding-bottom: 10px;
+  }
+
+  .main .hero .left-column .left-column-text p {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 25px;
+  }
+
+  .main .hero .left-column .left-column-text h1 {
+    font-size: 33px;
+    line-height: 30px;
+    padding-bottom: 10px;
+  }
+
+  .main .hero .left-column .left-column-text h1 span {
+    font-size: 33px;
+    line-height: 50px;
+  }
+
+  br {
+    display: none;
+  }
+
+  .main .hero .left-column .left-column-button {
+    padding: 20px 5px;
+    display: grid;
+    gap: 5px;
+  }
+  .main .hero .left-column .left-column-button button {
+    width: 95%;
+    height: 40px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .main .hero .right-column img {
+    padding: 30px 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/*min-width: 601px and max-width: 991px */
+
+@media only screen and (min-width: 601px) and (max-width: 991px) {
+  .main {
+    width: 100%;
+  }
+
+  .main .navbar {
+    gap: 50px;
+  }
+
+  .main .navbar .nav-list ul {
+    display: flex;
+    width: max-content;
+  }
+
+  .main .navbar .nav-list ul li {
+    font-size: 13px;
+    line-height: 23px;
+  }
+
+  .main .navbar .login {
+    padding-left: 30px;
+  }
+
+  .main .hero {
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+  }
+
+  br {
+    display: none;
+  }
+
+  .main .hero .left-column .left-column-text {
+    padding-top: 10px;
+    gap: 20px;
+  }
+
+  .main .hero .left-column .left-column-text h2 {
+    font-size: 25px;
+    line-height: 25px;
+    padding-bottom: 10px;
+  }
+
+  .main .hero .left-column .left-column-text p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .main .hero .left-column .left-column-text h1 {
+    font-size: 50px;
+    line-height: 50px;
+    padding-bottom: 10px;
+  }
+
+  .main .hero .left-column .left-column-text h1 span {
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  .main .hero .left-column .left-column-button button {
+    width: 155px;
+    height: 35px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .main .hero .right-column img {
+    padding: 30px 0;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1180px) {
+  br {
+    display: none;
+  }
+}

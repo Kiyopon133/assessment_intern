@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/style.css">
+    <title>Assessment</title>
+</head>
+
+<!--BURGER NAV-MENU START-->
+<div class="nav-menu">
+    <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">About Us</a></li>
+        <li><a href="">Services</a></li>
+        <li><a href="">News & Updates</a></li>
+    </ul>
+    <div class="login">
+        <button>Login</button>
+    </div>
+</div>
+<!--BURGER NAV-MENU END-->
+
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="logo">
+                <img src="/assets/navbar-logo-image.png" alt="logo">
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="active"><a href="">Home</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">News & Updates</a></li>
+                </ul>
+            </div>
+            <div class="login">
+                <button>Login</button>
+            </div>
+
+            <!-- BURGER ICON START-->
+            <div class="burger-icon" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <!-- BURGER ICON STOP-->
+
+        </div>
+        <div class="hero">
+            <div class="left-column">
+                <div class="left-column-text">
+                    <h2>Your Partner in Career Success</h2>
+                    <h1>Connecting Talent with <span>Opportunity</span></h1>
+                    <p>Welcome to Talent Us Inc., where we make the perfect match<br>
+                        between exceptional talent and the companies that need them.</p>
+                </div>
+
+                <div class="left-column-button">
+                    <button class="blue-button">Get Started</button>
+                    <button class="white-button">Contact Us</button>
+                </div>
+            </div>
+            <div class="right-column">
+                <img src="./assets/right-column-image.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            let navMenu = document.querySelector('.nav-menu');
+            navMenu.style.display = (navMenu.style.display === 'block') ? 'none' : 'block';
+        }
+    </script>
+</body>
+
+</html>
